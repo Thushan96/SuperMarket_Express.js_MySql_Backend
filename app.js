@@ -7,12 +7,14 @@ const port = 4000
 const customer = require('./routes/customer')
 const item = require('./routes/item')
 const orders = require('./routes/Orders')
+const orderDetails = require('./routes/orderDetails')
 
 app.use(express.json())
 
 app.use('/customer', customer)
 app.use('/item', item)
 app.use('/orders', orders)
+app.use('/orderDetails', orderDetails)
 
 
 // app.get('/', (req, res) => {
